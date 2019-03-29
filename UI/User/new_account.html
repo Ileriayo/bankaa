@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descrition" content="Banka is a light-weight core banking application that powers banking operations like account
+	creation, customer deposit and withdrawals. This app is meant to support a single bank, where
+	users can signup and create bank accounts online, but must visit the branch to withdraw or
+	deposit money">
+    <meta name="keywords" content="banka, banking, bank, deposit, withdrawals, accounts, money">
+    <meta name="author" content="Ileriayo Adebiyi">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New Account</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="brand">
+                <h1>Banka</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li>Hi <span>[User]</span> <span class="profile-pic"><img src="/UI/img/profilepicture.jpg"
+                                alt="profile picture"></span></li>
+                    <li><a href="./dashboard.html">Go Back To Dashboard</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="showcase">
+            <div class="container">
+                <h2>Create New Bank Account</h2>
+                <div class="card-holder">
+                    <div class="card">
+                        <div class="center small-width">
+                            <form class="form-grid">
+                                <label for="firstname">First Name:<span class="important">*</span></label>
+                                <input type="text" name="firstname" placeholder="First Name" required>
+                                <label for="lastname">Last Name:<span class="important">*</span></label>
+                                <input type="text" name="lastname" placeholder="Last Name" required>
+                                <label for="email">Email:<span class="important">*</span></label>
+                                <input type="email" name="email" placeholder="Email" required>
+                                <label for="dateOfBirth">Date oF Birth:<span class="important">*</span></label>
+                                <input type="date" name="dateOfBirth" required>
+                                <label for="gender">Gender:<span class="important">*</span></label>
+                                <span>
+                                    <input type="radio" name="gender" value="female" required>Female
+                                </span>
+                                <span>
+                                    <input type="radio" name="gender" value="male">Male
+                                </span>
+                                <label for="address">Address:</label>
+                                <textarea name="address" placeholder="Address"></textarea>
+                                <label for="phone_number">Phone Number:<span class="important">*</span></label>
+                                <input type="tel" name="phone_number" placeholder="Phone Number" maxlength="11"
+                                    required><br>
+                                <div class="form-grid-checkbox">
+                                    <input type="checkbox" name="t&c" required>
+                                    <label for="t&c" class="small-text"><span class="important">*</span>I have read the
+                                        T&C,
+                                        and it's absolutely amazing!!!</label>
+                                </div>
+                                <button type="" id="btn-create">Create</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <aside id="create-account-modal" class="modal">
+        <div class="container">
+            <div class="card">
+                <div class="">
+                    <form action="" class="">
+                        <div id="confirmation">Are you sure you entered the right information? Proceed?</div>
+                        <div class="center">
+                            <button type="submit" class="accept-btn">Yes</button>
+                            <button class="reject-btn">No</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <footer>
+        <p>Made with blood and sweat by Ileriayo Adebiyi &copy; 2019</p>
+    </footer>
+</body>
+<script src="../js/confirmation.js"></script>
+</html>
